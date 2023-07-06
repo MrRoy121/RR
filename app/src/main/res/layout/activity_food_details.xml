@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.FoodDetailsActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:src="@drawable/fbg"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="100dp"/>
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxx:"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/white"
+            android:textSize="38sp"
+            android:textStyle="bold"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="130dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zutaten fur das Gericht:"
+                android:layout_margin="20dp"
+                android:textColor="#2B2B2B"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@color/black"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="100dp"/>
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ASD"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="#2E2E2E"
+                    android:layout_marginStart="5dp"/>
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"/>
+                <CheckBox
+                    android:id="@+id/c1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#FF0000"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_height="wrap_content">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@color/black"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="100dp"/>
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ASD"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="#2E2E2E"
+                    android:layout_marginStart="5dp"/>
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"/>
+                <CheckBox
+                    android:id="@+id/c2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#FF0000"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_height="wrap_content">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@color/black"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="100dp"/>
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ASD"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="#2E2E2E"
+                    android:layout_marginStart="5dp"/>
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"/>
+                <CheckBox
+                    android:id="@+id/c3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#FF0000"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Markiere die dir fehlenden Zutaten um disen in eien virtuellen Einkaufskorb zu legen!"
+                android:layout_margin="20dp"
+                android:textColor="#2B2B2B"
+                android:textSize="22sp"/>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/next"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:elevation="10dp"
+            android:layout_margin="20dp"
+            android:layout_gravity="bottom|end"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="#FF0000">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weiter:"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textColor="#DFDFDF"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+</ScrollView>
